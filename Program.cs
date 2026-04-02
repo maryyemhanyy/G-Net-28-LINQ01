@@ -40,6 +40,19 @@ namespace LINQSession1
             //    Console.WriteLine(item);
             //}
             #endregion
+
+            #region Q4
+            //Get all products where UnitPrice is between 10 and 30
+
+            //var result = ProductList.Where(p => p.UnitPrice>=10 && p.UnitPrice<=30)
+            //                        .Select(p => new { Name = p.ProductName, Price = p.UnitPrice });
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
         }
     }
 }
