@@ -167,6 +167,21 @@ namespace LINQSession1
             //}
 
             #endregion
+
+            #region Q13
+            /*Create a list of all digits in the array whose second
+              letter is 'i' that is reversed from the order in the
+              original array.*/
+
+            //String[] Arr = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" , "ten" };
+
+            //var result = Arr.Where(a => char.ToLower(a[1]) == 'i').Reverse();
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
         }
     }
 }
