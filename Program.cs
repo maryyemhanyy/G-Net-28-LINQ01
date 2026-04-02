@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Numerics;
 using System.Xml.Linq;
 using static LINQSession1.Source;
 
@@ -113,16 +114,31 @@ namespace LINQSession1
             #region Q9
             //Get all products from the "Beverages" category, sorted by UnitsInStock descending. Print name and stock.
 
-            var result = ProductList.Where(p => p.Category == "Beverages").OrderByDescending(p => p.UnitsInStock)
-                                    .Select(p => new {Name = p.ProductName , Stock = p.UnitsInStock});
+            //var result = ProductList.Where(p => p.Category == "Beverages").OrderByDescending(p => p.UnitsInStock)
+            //                        .Select(p => new {Name = p.ProductName , Stock = p.UnitsInStock});
 
 
-            foreach (var item in result)
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
             #endregion
 
+            #region Q10
+            //Using QUERY SYNTAX with a compound from clause, list all orders placed in 1997 or later showing CustomerID and OrderDate.
+
+            //var result = from c in CustomerList
+            //             from o in c.Orders
+            //             where o.OrderDate.Year >= 1997
+            //             select new { CustomerID = c.CustomerID, OrderDate = o.OrderDate };
+
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
         }
     }
 }
