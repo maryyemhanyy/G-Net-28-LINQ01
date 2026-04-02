@@ -110,6 +110,19 @@ namespace LINQSession1
             //}
             #endregion
 
+            #region Q9
+            //Get all products from the "Beverages" category, sorted by UnitsInStock descending. Print name and stock.
+
+            var result = ProductList.Where(p => p.Category == "Beverages").OrderByDescending(p => p.UnitsInStock)
+                                    .Select(p => new {Name = p.ProductName , Stock = p.UnitsInStock});
+
+
+            foreach (var item in result)
+            {
+                Console.WriteLine(item);
+            }
+            #endregion
+
         }
     }
 }
