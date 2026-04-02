@@ -29,6 +29,17 @@ namespace LINQSession1
             //    Console.WriteLine(item);
             //}
             #endregion
+
+            #region Q3
+            //Sort all products by UnitPrice (ascending). Print each product's name and price.
+
+            //var result = ProductList.OrderBy(p => p.UnitPrice).Select(p => new { Name = p.ProductName, Price = p.UnitPrice });
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
         }
     }
 }
