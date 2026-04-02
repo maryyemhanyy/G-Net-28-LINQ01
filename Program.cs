@@ -53,6 +53,21 @@ namespace LINQSession1
             //}
             #endregion
 
+
+            #region Q5
+            //Get all products that are in stock (UnitsInStock > 0) and belong to the "Condiments" category.
+
+            //var result = ProductList.Where(p => p.UnitsInStock > 0 && p.Category == "Condiments")
+            //                        .Select(p => new { Name = p.ProductName, Category = p.Category , Stock = p.UnitsInStock });
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+           
+
         }
     }
 }
