@@ -139,6 +139,17 @@ namespace LINQSession1
             //}
 
             #endregion
+
+            #region Q11
+            //Show position number alongside ProductName
+
+            //var result = ProductList.Select((p , i) => $"{i+1}-{p.ProductName}");
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
         }
     }
 }
