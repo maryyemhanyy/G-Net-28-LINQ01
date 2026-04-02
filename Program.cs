@@ -150,6 +150,23 @@ namespace LINQSession1
             //    Console.WriteLine(item);
             //}
             #endregion
+
+            #region Q12
+            /*Sort first by-word length and then by a case-insensitive sort of the words in an array.
+            
+             String [] Arr = {"aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry"};*/
+
+            //String[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BlUeBeRrY", "ClOvEr", "cHeRry" };
+
+            //var result = Arr.OrderBy(a => a.Length).ThenBy(a => a , StringComparer.OrdinalIgnoreCase);
+
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
         }
     }
 }
